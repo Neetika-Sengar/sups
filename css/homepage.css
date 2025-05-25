@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background-color: #264650;
+  color: #f4f0da;
+}
+
+.sidebar a {
+  all: unset;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar {
+  padding: 0 1rem;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar h1 {
+  font-size: 2.75rem;
+  line-height: 1.2;
+  position: absolute;
+}
+
+h1 span {
+  color: #264650;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #d8e6e1;
+  padding: 20px;
+}
+
+.side-nav-links {
+  list-style: none;
+  padding: 20px;
+  margin: 50% 0 0 0;
+  line-height: 2;
+  font-size: 1rem;
+  color: #f4f0da;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-nav-links li:hover {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #e76f51;
+}
+
+.side-nav-links li:active {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #e76f51;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  padding-top: 7.5%;
+  background-color: #f4f0da;
+  border-radius: 35px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  color: grey;
+  .nav-link a {
+    color: #e76f51;
+  }
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  .left-1 {
+    border: solid 1px red; /* remove border later*/
+    flex: 0.8;
+  }
+  .left-2 {
+    border: solid 1px red; /* remove border later*/
+    flex: 1;
+  }
+
+  h3 {
+    color: #e76f51;
+  }
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: right;
+  h1 {
+    color: #e76f51;
+  }
+}
+.bottom {
+  color: #e76f51;
+  margin: auto 5px 0 5px;
+}
+
+.graph-flex-box {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.graph-placeholder {
+  flex: 8;
+  align-items: start;
+  overflow: hidden;
+
+  .flourish-credit {
+    display: none;
+  }
+}
+
+.aside-graph {
+  flex: 2;
+  min-height: 400px;
+  border: solid 1px red; /* to remove later */
+}
